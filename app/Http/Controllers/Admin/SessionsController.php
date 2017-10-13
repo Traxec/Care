@@ -24,8 +24,9 @@ class SessionsController extends Controller
       session()->flash('success','欢迎登录'.config('app.name').'后台管理系统');
       return redirect()->route('admin.index',[Auth::admin()]);
     }else{
-      session()->flash('error','很抱歉，您的账号和密码不匹配');
-      return redirect()->route('admin.login');
+      // session()->flash('danger','很抱歉，您的账号和密码不匹配');
+      // return redirect()->route('admin.login')->with('danger','很抱歉，您的账号和密码不匹配');
+      return back()->with('danger','很抱歉，您的账号和密码不匹配');
     }
   }
 }

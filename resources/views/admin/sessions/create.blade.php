@@ -21,6 +21,7 @@
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
+            @include('admin.shared._messages')
             @include('admin.shared._error')
             <form action="{{route('admin.login')}}" method="POST">
               {{ csrf_field() }}
