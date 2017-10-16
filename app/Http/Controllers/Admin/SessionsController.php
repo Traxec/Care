@@ -8,6 +8,12 @@ use Auth;
 
 class SessionsController extends Controller
 {
+  public function __construct()
+  {
+    $this->middleware('guest:admin',[
+      'only' => ['create','store']
+    ]);
+  }
 
   public function create()
   {
@@ -20,13 +26,17 @@ class SessionsController extends Controller
       'username'=>'required|max:255',
       'password'=>'required'
     ]);
-    if(Auth::guard('admin')->attempt($admins)){
-      session()->flash('success','欢迎登录'.config('app.name').'后台管理系统');
-      return redirect()->route('admin.index',[Auth::admin()]);
+    if(Auth('admin')->attempt($admins)){
+      // session()->flash('success','欢迎登录'.config('app.name').'后台管理系统');
+      return redirect('admin')->with('success','欢迎登录'.config('app.name').'后台管理系统');
     }else{
-      // session()->flash('danger','很抱歉，您的账号和密码不匹配');
-      // return redirect()->route('admin.login')->with('danger','很抱歉，您的账号和密码不匹配');
       return back()->with('danger','很抱歉，您的账号和密码不匹配');
     }
+  }
+
+  public function destroy()
+  {
+    Auth('admin')->logout();
+    return redirect('admin/login')->with('success','您已成功退出');
   }
 }
