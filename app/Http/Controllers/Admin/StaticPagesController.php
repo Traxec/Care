@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use auth;
 
 class StaticPagesController extends Controller
 {
@@ -12,7 +13,7 @@ class StaticPagesController extends Controller
     $this->middleware('auth:admin');
   }
 
-  public function index()
+  public function index(Request $request)
   {
     return view('admin.statics_pages.index');
   }
