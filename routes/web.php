@@ -14,7 +14,6 @@
 Route::view('/','welcome')->name('welcome');
 
 Auth::routes();
-Route::redirect('login','admin/login');
 
 Route::get('/home', 'Home\HomeController@index')->name('home');
 /*
