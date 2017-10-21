@@ -12,6 +12,8 @@
 */
 
 Route::view('/','welcome')->name('welcome');
+Route::view('/AL','home.statics.AL')->name('AL');
+Route::view('/3D','home.statics.3D')->name('3D');
 
 Auth::routes();
 

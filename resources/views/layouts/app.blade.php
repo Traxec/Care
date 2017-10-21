@@ -9,7 +9,9 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="{{asset('./bootcss/home/css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{asset('./bootcss/home/css/app.css')}}">
   <link rel="icon" href="{{asset('./favicon.ico')}}">
+
 </head>
 
 <body>
@@ -17,150 +19,104 @@
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <div class="carousel-caption">
         {{-- 导航栏 --}}
-        <nav class="navbar light navbar-fixed-top">
+        <nav class="navbar navbar-light navbar-fixed-top">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="icon-bar"></span>
-              </button>
               <a class="navbar-brand" href="{{route('welcome')}}"><img src="{{asset('./bootcss/home/images/Care.png')}}" alt=""></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="navbar-form navbar-left">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-              </form>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </li>
+                <li><a href="{{ route('login') }}">登录</a></li>
+                <li><a href="{{ route('register') }}">注册</a></li>
               </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-        {{-- <nav class="navbar navbar-light navbar-fixed-top">
+              <ul class="nav navbar-nav navbar-right col-md-4">
+                <li><a href="{{ route('3D') }}">3D相册</a></li>
+                <li><a href="{{ route('register') }}">音乐推荐</a></li>
+                <li><a href="{{ route('login') }}">会计学习</a></li>
+                <li><a href="{{ route('AL') }}">我们的爱</a></li>
+                {{-- <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="#">action</a></li>
+                <li><a href="#">another action</a></li>
+                <li><a href="#">something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">separated link</a></li>
+              </ul>
+            </li> --}}
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+  </ol>
 
-        <div class="nav pull-left">
-        <img src="{{asset('./bootcss/home/images/logo.jpg')}}" alt="care">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="{{asset('./bootcss/home/images/1.jpg')}}" alt="..." height="200">
+      <div class="carousel-caption">
       </div>
-      <ul class="nav nav-pills pull-right">
-      <li class="nav-item"><a class="nav-link" style="" href="{{ route('login') }}" role="tab" data-toggle="tab">Login</a></li>
-      <li class="nav-item"><a class="nav-link" style="" href="{{ route('register') }}" role="tab" data-toggle="tab">Register</a></li>
-    </ul>
-  </nav> --}}
+    </div>
+    <div class="item">
+      <img src="{{asset('./bootcss/home/images/2.jpg')}}" alt="...">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+      <img src="{{asset('./bootcss/home/images/3.jpg')}}" alt="...">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+      <img src="{{asset('./bootcss/home/images/4.jpg')}}" alt="...">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+      <img src="{{asset('./bootcss/home/images/5.jpg')}}" alt="...">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+      <img src="{{asset('./bootcss/home/images/6.jpg')}}" alt="...">
+      <div class="carousel-caption">
+      </div>
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+{{-- 轮播结束 --}}
 
 </div>
-<!-- Indicators -->
-<ol class="carousel-indicators">
-  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-  <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-  <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-</ol>
-
-<!-- Wrapper for slides -->
-<div class="carousel-inner" role="listbox">
-  <div class="item active">
-    <img src="{{asset('./bootcss/home/images/1.jpg')}}" alt="..." height="200">
-    <div class="carousel-caption">
-    </div>
-  </div>
-  <div class="item">
-    <img src="{{asset('./bootcss/home/images/2.jpg')}}" alt="...">
-    <div class="carousel-caption">
-    </div>
-  </div>
-  <div class="item">
-    <img src="{{asset('./bootcss/home/images/3.jpg')}}" alt="...">
-    <div class="carousel-caption">
-    </div>
-  </div>
-  <div class="item">
-    <img src="{{asset('./bootcss/home/images/4.jpg')}}" alt="...">
-    <div class="carousel-caption">
-    </div>
-  </div>
-  <div class="item">
-    <img src="{{asset('./bootcss/home/images/5.jpg')}}" alt="...">
-    <div class="carousel-caption">
-    </div>
-  </div>
-  <div class="item">
-    <img src="{{asset('./bootcss/home/images/6.jpg')}}" alt="...">
-    <div class="carousel-caption">
-    </div>
-  </div>
-</div>
-
-<!-- Controls -->
-<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-  <span class="sr-only">Previous</span>
-</a>
-<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-  <span class="sr-only">Next</span>
-</a>
-</div>
-</div>
+@include('home.statics.3D')
 <script src="{{asset('./bootcss/home/js/jquery.min.js')}}"></script>
 <script src="{{asset('./bootcss/home/js/popper.min.js')}}"></script>
 <script src="{{asset('./bootcss/home/js/bootstrap.min.js')}}"></script>
-<script type="text/javascript">
-//轮播速率
-$('.carousel').carousel({
-  interval: 2000,
-})
-//监听右侧下拉栏状态
-$(document).ready(function() {
-  $(window).scroll(function() {
-    if ($(document).scrollTop()<=0){
-      $('nav').css('background','')
-      $('nav').addClass('navbar-light')
-    }else{
-      $('nav').removeClass('navbar-light')
-      $('nav').css('background','-webkit-gradient(linear, 0 0, 0 bottom, from(pink), to(rgba(255,192,203,0.0))');
-      $('nav').css('border','0px');
-    }
-  });
-});
-//监听窗口改变
-$('.carousel-inner').css('height',$(window).height())
-$(window).resize(function(){
-  $('.carousel-inner').css('height',$(window).height())
-})
-</script>
+<script src="{{asset('./bootcss/home/js/app.js')}}"></script>
+	<audio id="bgmMusic" src="lovebgm.mp3" autoplay="autoplay" loop="loop" preload="auto" type="{{asset('./bootcss/home/AI/audio/mp3')}}"></audio>
+	{{-- <script src="jquery.min.js" tppabs="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script> --}}
+	<script src="{{asset('./bootcss/home/AI/all.min.js')}}" ></script>
+	<script src="{{asset('./bootcss/home/AI/love.min.js')}}" ></script>
 
 </body>
 
