@@ -7,17 +7,19 @@ $('.carousel').carousel({
 $(document).ready(function() {
   $(window).scroll(function() {
     if ($(document).scrollTop()<=0){
-      $('nav').css('background','')
-      $('nav').addClass('navbar-light')
+      $('#nav').css('background','')
+      $('#nav').addClass('navbar-light')
     }else{
-      $('nav').removeClass('navbar-light')
-      $('nav').css('background','-webkit-gradient(linear, 0 0, 0 bottom, from(pink), to(rgba(255,192,203,0.0))');
-      $('nav').css('border','0px');
+      $('#nav').removeClass('navbar-light')
+      $('#nav').css('background','-webkit-gradient(linear, 0 0, 0 bottom, from(pink), to(rgba(255,192,203,0.0))');
+      $('#nav').css('border','0px');
     }
   });
 });
-//监听窗口改变
+//监听导航栏窗口改变
 $('.carousel-inner').css('height',$(window).height())
 $(window).resize(function(){
   $('.carousel-inner').css('height',$(window).height())
 })
+
+$('#xc').css('height',$(window).height()+25)
