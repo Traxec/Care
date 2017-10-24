@@ -1,34 +1,5 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>美丽画城</title>
-
-<style type="text/css">
-html {
-	/*overflow:hidden;*/
-	-ms-touch-action:none;
-	-ms-content-zooming:none;
-}
-body {
-	position:absolute;
-	margin:0px;
-	padding:0px;
-	background:#fff;
-	width:100%;
-	height:100%;
-}
-#canvas {
-	position:absolute;
-	width:100%;
-	height:100%;
-	background:#fff;
-}
-</style>
-
 <script type="text/javascript" src="{{asset('bootcss/home/3D/js/ge1doot.js')}}"></script>
 <script type="text/javascript">
-
 "use strict";
 
 (function () {
@@ -370,14 +341,8 @@ body {
 </script>
 
 </head>
-<body>
-<div style="text-align:center;clear:both;">
-<script src="{{asset('bootcss/home/3D/gg_bd_ad_720x90.js" type="text/javascript')}}"></script>
-<script src="{{asset('bootcss/home/3D/follow.js" type="text/javascript')}}"></script>
-</div>
+<body style="background:url(@include('home.statics.pubu')
+<div style="text-align:center;clear:both;"> </div>
 
 <canvas id="canvas">你的浏览器不支持HTML5画布技术，请使用谷歌浏览器。</canvas>
-
-
 </body>
-</html>

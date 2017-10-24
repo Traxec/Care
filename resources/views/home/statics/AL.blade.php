@@ -1,15 +1,11 @@
 
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>❤相识若相思❤相恋似相依❤</title>
-  <link rel="stylesheet" href="{{asset('./bootcss/home/AI/all.min.css')}}" >
-</head>
+<link rel="stylesheet" href="{{asset('./bootcss/home/AI/all.min.css')}}" >
+@extends('layouts.app')
 <div class="flowtime">
 		<div class="ft-section section-1" data-id="section-1">
 			<div id="/section-1/page-1" class="ft-page page-1" data-id="page-1">
 				<p class="text1"><span id="text-75" contenteditable="true">崔崔</span> ❤ <span id="text-76" contenteditable="true">小公主</span> <span id="text-77" contenteditable="true">一生一世</span></p>
-				<p class="text2">按键盘 "↓" <span id="text-78" contenteditable="true">开始倾听崔崔的表白</span></p>
+				<p class="text2" style="color:#000;font-size:20px">按键盘 "↓" <span id="text-78" contenteditable="true">开始倾听崔崔的表白</span></p>
 			</div>
 			<div id="/section-1/page-2" class="ft-page page-2" data-id="page-2">
 				<p class="top-text" id="text-1" contenteditable="true">过去的崔崔一直是一个人生活，享受着孤独，也憧憬着爱情。</p>
@@ -268,7 +264,4 @@
 	</div>
 	{{-- <div class="nojavascript">您的浏览器禁用了javascript，无法正常浏览本页面</div> --}}
 	<audio id="bgmMusic" src="{{asset('./bootcss/home/AI/lovebgm.mp3')}}" autoplay="autoplay" loop="loop" preload="auto" type=""></audio>
-	{{-- <script src="jquery.min.js" tppabs="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script> --}}
-	<script src="{{asset('./bootcss/home/AI/all.min.js')}}" ></script>
-	<script src="{{asset('./bootcss/home/AI/love.min.js')}}" ></script>
 	<div class="mPower"><span id="on" title="点击暂停" style=""></span><span id="off" title="点击播放"  style=""></span></div>

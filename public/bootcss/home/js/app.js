@@ -21,5 +21,3 @@ $('.carousel-inner').css('height',$(window).height())
 $(window).resize(function(){
   $('.carousel-inner').css('height',$(window).height())
 })
-
-$('#xc').css('height',$(window).height()+25)

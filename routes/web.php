@@ -14,6 +14,8 @@
 Route::view('/','welcome')->name('welcome');
 Route::view('/AL','home.statics.AL')->name('AL');
 Route::view('/3D','home.statics.3D')->name('3D');
+Route::view('/pubu','home.statics.pubu')->name('pubu');
+Route::view('/love_time','home.statics.love_time')->name('love_time');
 
 Auth::routes();
 
