@@ -12,5 +12,8 @@
 			</div>
 		</div>
 
-<div style="text-align:center;clear:both">
-</div>
+		<div style="text-align:center;clear:both">
+		</div>
+  <script type="text/javascript" src="{{asset('bootcss/home/love_time/js/jquery.js')}}"></script>
+  <script type="text/javascript" src="{{asset('bootcss/home/love_time/js/garden.js')}}"></script>
+  <script type="text/javascript" src="{{asset('bootcss/home/love_time/js/functions.js')}}"></script>

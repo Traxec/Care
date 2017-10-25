@@ -13,9 +13,10 @@
   <div class="container-fulid">
     {{-- 导航栏 --}}
     @include('home.shared._nav')
+
     @section('content')
       {{-- ... --}}
-    @endsection
+    @show
     {{-- 页尾 --}}
     @include('home.shared._footer')
   </div>
