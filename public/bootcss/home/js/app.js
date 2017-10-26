@@ -21,3 +21,10 @@ $('.carousel-inner').css('height',$(window).height())
 $(window).resize(function(){
   $('.carousel-inner').css('height',$(window).height())
 })
+//表单页面高度自适应
+$('.rform').css('margin-top',($(window).height()-$('.rform').height())/2-100)
+$('.rform').css('margin-bottom',($(window).height()-$('.rform').height())/2)
+$(window).resize(function(){
+  $('.rform').css('margin-top',($(window).height()-$('.rform').height())/2-100)
+  $('.rform').css('margin-bottom',($(window).height()-$('.rform').height())/2)
+})

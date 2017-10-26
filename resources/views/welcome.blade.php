@@ -69,4 +69,4 @@
     <div id="i_kj_z" class="container-fills">
       @include('home.shared._kuaiji')
     </div>
-  @show
+  @stop
