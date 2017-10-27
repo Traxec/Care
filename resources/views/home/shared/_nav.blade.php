@@ -35,8 +35,8 @@
               @auth
               <ul class="nav navbar-nav navbar-right col-md-4">
                 {{-- <li><a href="{{ route('3D') }}">3D相册</a></li> --}}
-                <li><a href="{{ route('register') }}">音乐推荐</a></li>
-                <li><a href="{{ route('login') }}">会计学习</a></li>
+                {{-- <li><a href="{{ route('register') }}">音乐推荐</a></li> --}}
+                {{-- <li><a href="{{ route('login') }}">会计学习</a></li> --}}
                 <li><a href="{{ route('AL') }}">我们的爱</a></li>
               </ul>
               @endauth
