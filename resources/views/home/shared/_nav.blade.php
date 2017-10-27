@@ -43,6 +43,15 @@
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
-        <nav class="navbar navbar-light navbar-fixed-bottom">
-          {{-- @include('home.shared._music') --}}
+        <nav style="margin-top:15px;margin-right:30px;" class="navbar navbar-light navbar-fixed-top">
+          <ul class="navbar-right" style="list-style-type:none">
+            <li role="presentation" class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="glyphicon glyphicon-music"></i>
+              </a>
+              <ul class="dropdown-menu">
+                @include('home.shared._music')
+              </ul>
+            </li>
+          </ul>
         </nav>
