@@ -67,6 +67,6 @@
       @include('home.statics.3D')
     </div>
     <div id="i_kj_z" class="container-fills">
-      @include('home.shared._kuaiji')
+      {{-- @include('home.shared._kuaiji') --}}
     </div>
   @stop

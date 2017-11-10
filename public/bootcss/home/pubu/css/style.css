@@ -27,8 +27,8 @@ canvas#waterfall {
 }
 
 .emma {
-  height: 100vh;
-  width: 800px;
+  /*height: 100vh;*/
+  /*width: 800px;*/
   position: absolute;
   left: 0;
   top: 50;

@@ -21,6 +21,8 @@ label{
   border-radius: 20px;
 }
 
+.nav:nth-child(0)
+
 .nav>li>a:focus{
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;

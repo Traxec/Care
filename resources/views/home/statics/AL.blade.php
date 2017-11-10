@@ -181,12 +181,12 @@
 				<h3 id="text-46" contenteditable="true"> 崔崔又怎会飞的更高更远</h3>
 			</div>
 			<div id="/section-7/page-4" class="ft-page page-42" data-id="page-4">
-				<h3><span id="text-47" contenteditable="true">崔崔不想这样。他要为小公主改变自己</span><br /><span id="text-48" contenteditable="true">小公主说她喜欢狮子座的人，于是崔崔许下愿望</span></h3>
+				<h3><span id="text-47" contenteditable="true">崔崔不想这样。他要为小公主改变自己</span><br /><span id="text-48" contenteditable="true">小公主说她喜欢双鱼座的人，于是崔崔许下愿望</span></h3>
 				<img src="{{asset('bootcss/home/AI/img/iali69.jpg')}}" tppabs="{{asset('img/iali69.jpg')}}"  />
 			</div>
 			<div id="/section-7/page-5" class="ft-page page-43" data-id="page-5">
 				<img src="{{asset('bootcss/home/AI/img/iali42.jpg')}}" tppabs="{{asset('img/iali42.jpg')}}" />
-				<h3 id="text-49" contenteditable="true">我愿为你变成狮子座</h3>
+				<h3 id="text-49" contenteditable="true">我愿为你变成双鱼座</h3>
 			</div>
 			<div id="/section-7/page-6" class="ft-page page-44 left-img" data-id="page-6">
 				<h3><span id="text-50" contenteditable="true">爱情就像花草一样</span><br /><span id="text-51" contenteditable="true">需要用包容来浇灌</span></h3>
@@ -244,7 +244,7 @@
 			</div>
 			<div id="/section-9/page-2" class="ft-page page-53" data-id="page-2">
 				<img src="{{asset('bootcss/home/AI/img/iali68.jpg')}}" tppabs="{{asset('img/iali68.jpg')}}" alt='happy birthday' />
-				<h3 id="text-72" contenteditable="true">情人节快乐</h3>
+				<h3 id="text-72" contenteditable="true">21岁生日快乐,乖乖</h3>
 			</div>
 			<div id="/section-9/page-3" class="ft-page page-54 center-img" data-id="page-3" >
 				<div class="center-img">I love you</div>
